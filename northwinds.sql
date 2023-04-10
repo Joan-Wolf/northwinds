@@ -24,12 +24,10 @@
 
 -- 7. Get all customers ordered by the country, then by the city.
 -- SELECT * FROM customers
--- ORDER BY country;
--- ORDER BY city;
+-- ORDER BY country, city;
 
 -- 8. Add a new customer to the customers table. You can use whatever values.
--- INSERT INTO customers (customer_id, company_name, contact_name, contact_title, address, city, postal_code, country,
--- 					  phone)
+-- INSERT INTO customers (customer_id, company_name, contact_name, contact_title, address, city, postal_code, country, phone)
 -- VALUES ('DUNDR', 'Dunder Mifflin', 'Toby Flenderson', 'HR', '1725 Slough Ave', 'Scranton', '18503', 'USA', '(570)904-5026')
 
 -- 9. Update all ship_region to the value 'EuroZone' in the orders table, where the ship_country is 'France'. 
@@ -39,14 +37,12 @@
 -- DELETE FROM order_details WHERE quantity = 1;
 
 -- 11. Calculate the average, max, and min of the quantity in the order_details table.
--- SELECT AVG(quantity)FROM order_details;
--- SELECT MAX(quantity)FROM order_details;
--- SELECT MIN(quantity)FROM order_details;
+-- SELECT AVG(quantity) AS "Average Quantity";
+-- SELECT MAX(quantity) AS "Max Quantity";
+-- SELECT MIN(quantity) AS "Min Quantity";
 
 -- 12. Calculate the average, max, and min of the quantity in the order_details table, grouped by the order_id.
--- SELECT AVG(quantity) FROM order_details GROUP BY order_id;
--- SELECT MAX(quantity) FROM order_details GROUP BY order_id;
--- SELECT MIN(quantity) FROM order_details GROUP BY order_id;
+-- SELECT order_id, AVG(quantity), MAX(quantity), MIN(quantity) FROM order_details GROUP BY order_id;
 
 -- 13. Find the customer_id that placed order 10290 (orders table)
 -- SELECT customer_id FROM orders
