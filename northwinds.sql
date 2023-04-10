@@ -1,15 +1,15 @@
 -- 1. Select all the records from the customers table. 
--- -- select * from employees;
+-- SELECT * FROM employees;
 
 -- 2. Get distinct countries from the customers table.
--- -- select distinct country from employees;
+-- SELECT DISTINCT country FROM employees;
 
 -- 3. Get all the records from the table customers where the customer_id starts with “BL”.
--- -- select * from customers where customer_id like 'BL%';
+-- SELECT * FROM customers WHERE customer_id like 'BL%';
 
 -- 4. Get the first 100 records of the orders table.
--- -- select * from orders
--- -- limit 100;
+-- SELECT * FROM orders
+--  limit 100;
 
 -- 5. Get all customers that live in the postal codes 1010, 3012, 12209, and 05023.
 -- SELECT * FROM customers
